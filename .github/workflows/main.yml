@@ -27,4 +27,4 @@ jobs:
             cd ${{ secrets.WEB_PATH }} && git pull
             yarn
             yarn build
-            node dist/src/main
+            pm2 reload main
